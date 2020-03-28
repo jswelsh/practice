@@ -46,7 +46,7 @@ class Thermostat {
         this._temperature = temperature;
     }
     get temperature() {
-        return this._temperature;
+        return 5/9 * (this._temperature - 32);
     }
     set temperature(updateTemperature) {
         this._temperature = updateTemperature;

@@ -11,7 +11,9 @@ Math.max() expects comma-separated arguments, but not an array. The
 spread operator makes this syntax much better to read and maintain.
 const arr = [6, 89, 3, 45];
 const maximus = Math.max(...arr); // returns 89
-...arr returns an unpacked array. In other words, it spreads the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. The following code will not work:
+...arr returns an unpacked array. In other words, it spreads the array. 
+However, the spread operator only works in-place, like in an argument to a 
+function or in an array literal. The following code will not work:
 
 const spreaded = ...arr; // will throw a syntax error
 Copy all contents of arr1 into another array arr2 using the spread operator.
@@ -19,6 +21,6 @@ Copy all contents of arr1 into another array arr2 using the spread operator.
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
 let arr2;
 
-arr2 = [];  // Change this line
+arr2 = [...arr1];  // Change this line
 
 console.log(arr2);
